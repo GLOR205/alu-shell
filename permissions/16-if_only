@@ -1,2 +1,2 @@
 #!/bin/bash
-stat -c %U hello | grep -q '^guillaume$' && sudo chown vincent hello
+sudo chown vincent hello 2>/dev/null && sudo chown vincent hello
