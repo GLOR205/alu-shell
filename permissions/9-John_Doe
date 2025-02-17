@@ -1,3 +1,2 @@
 #!/bin/bash
-# Set the file mode to -rwxr-x-wx (753)
 chmod 753 hello
