@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -type f -empty -exec echo {} \| awk -F/ '{print $NF}'
+find . -type f -empty -exec sh -c 'echo "$(basename {})"' \+
