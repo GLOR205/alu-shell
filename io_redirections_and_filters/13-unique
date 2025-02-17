@@ -1,8 +1,2 @@
 #!/bin/bash
-words=()
-while read -r word; do
-    words+=("$word")
-done
-for word in $(echo "${words[@]}" | tr ' ' '\n' | sort | uniq -u); do
-    echo "$word"
-done
+tr ' ' '\n' < /dev/stdin | sort | uniq -u
