@@ -1,0 +1,8 @@
+#!/bin/bash
+current_owner=$(stat -c %U hello)
+if [ "$current_owner" == "guillaume" ]; then
+chown vincent hello
+echo "Owner changed to vincent."
+else
+echo "The file is not owned by guillaume, no changes made."
+fi
