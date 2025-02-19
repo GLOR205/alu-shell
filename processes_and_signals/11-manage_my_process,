@@ -25,4 +25,4 @@ if [[ "$#" == "1" ]]; then
   fi
 else
   echo "Usage: manage_my_process {start|stop|restart}"
-  fi
+fi
